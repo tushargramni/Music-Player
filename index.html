@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    Fontawesome icon link
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-...
+    "
+      crossorigin="anonymous"
+    />
+    Google Fonts
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <section class="player">
+      <header style="font-size: 32px;">Music Player</header>
+        <nav class="top-nav" style="display: flex; justify-content: space-between; width: 100%; padding: 2rem 0 ; font-size: 22px;">
+            <div class="back">
+                <i class="fas fa-arrow-left"> </i>
+            </div>
+            <span class="back">Playing Now</span>
+            <div class="menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <main>
+            <section class="song-img-sec">
+              <img src="./images/on_my-way.png" alt="">
+            </section>
+            <section class="song">
+              <div class="song-time" style="display: flex; width: 100%; justify-content: space-between; padding: 1rem 0; font-size: 12px;">
+                <span class="cTime">0:00</span>
+                <span class="eTime">0:00</span>
+              </div>
+              <div class="audio">
+                <audio src="./audio/da da da.mp3" ></audio>
+                <audio src="./audio/alex&reus.mp3">Alex & Reus</audio>
+                <audio src="./audio/on_my-way.mp3">On My Way</audio>
+                <audio src="./audio/da da da.mp3">Da Da Da song</audio>
+                <audio src="./audio/gangsta-paradise.mp3">Gangsta Paradise</audio>
+                <audio src="./audio/kosandra.mp3">Kosandra</audio>
+              </div>
+              <div class="bar"></div>
+            </section>
+        </main>
+        <footer>
+          <span><i class="fas fa-backward"></i></span>
+          <span><i class="fas fa-play fa-pause"></i></span>
+          <span><i class="fas fa-forward"></i></span>
+        </footer>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="player">
+    <div class="menu">
+      <select id="songSelect">
+        <option value="./audio/alex&reus.mp3">Alex & Reus</option>
+        <option value="./audio/on_my-way.mp3">On My Way</option>
+        <option value="./audio/da da da.mp3">Da Da Da song</option>
+        <option value="./audio/gangsta-paradise.mp3">Gangsta Paradise</option>
+        <option value="./audio/kosandra.mp3">Kosandra</option>
+      </select>
+      <button id="backButton">Back</button>
+    </div>
+    <div class="controls">
+      <button id="rewindButton">Rewind</button>
+      <button id="playPauseButton">Play</button>
+      <button id="forwardButton">Forward</button>
+      <button id="nextButton">Next</button>
+    </div>
+    <div id="error-message" style="color: red; margin-top: 10px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

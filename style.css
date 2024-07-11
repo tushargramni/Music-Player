@@ -1,0 +1,62 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  /* max-height: 100vh; */
+  background-color: black;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 1.5rem 3rem;
+  color: white;
+  border-radius: 1rem;
+  height: max-content;
+  backdrop-filter: blur(15px);
+  background: hsla(0, 100%, 100%, 0.15);
+  box-shadow: 4px 4px 8px #222, inset 4px 4px 8px grey;
+  /* background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+}
+.song-img-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  margin: auto;
+}
+.song-img-sec img {
+  width: 100%;
+  height: 100%;
+  animation: rotate 6s linear infinite;
+}
+@keyframes rotate { 
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.audio{
+    display: fle;
+    width: 100%;
+    margin: auto;
+    border: solid 2px white;
+}
